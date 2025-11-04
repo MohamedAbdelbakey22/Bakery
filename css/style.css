@@ -1,0 +1,400 @@
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+/* ==== Header ==== */
+.landing{
+    background-image: url(../assets/images/drew-coffman-1872.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.landing .layer{
+    background-color:rgba(0,0,0,0.4);
+    height: 100%;
+}
+.navbar{
+    padding-block: 10px;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.navbar input{
+    display: none;
+}
+
+.navbar label{
+    float: right;
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.landing .logo img{
+    width: 100px;
+    cursor: pointer;
+}
+.landing .nav-menu{
+    float: right;
+}
+.landing .nav-menu li{
+    display: inline-block;
+    padding-inline: 20px;
+    padding-top: 3px;
+}
+.landing .nav-menu li a{
+    color: #000;
+    font-size: 18px;
+}
+.landing .logo{
+    float: left;
+    color: #000;
+}
+.clr{
+    clear: both;
+}
+
+.area-landing{
+    text-align: center;
+    padding-top: 120px;
+    color: #fff;
+}
+
+.area-landing p:nth-of-type(1){
+    font-size: 22px;
+    line-height: 40px;
+}
+.area-landing p:nth-of-type(2){
+    font-size: 24px;
+    line-height: 44px;
+}
+
+.area-landing h1{
+    font-size: 76px;
+    padding-block: 30px;
+}
+
+.area-landing .btn-landing{
+    padding-top: 30px;
+}
+
+.area-landing .btn-landing button{
+    padding: 15px 20px;
+    border: 2px solid #7F644E;
+    border-radius: 4px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.area-landing .btn-landing .btn1{
+    background-color: #7F644E;
+}
+.area-landing .btn-landing .btn2{
+    background-color: transparent;
+    border-color: #fff;
+}
+.area-landing .btn-landing button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.area-landing a{
+    display:inline-block;
+    height: 50px;
+    width: 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.area-landing span{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%);
+    animation: anima 2s infinite;
+}
+
+@keyframes anima{
+    0% {top:10%;}
+    /* 25% {top:25%;}
+    50% {top:50%;}
+    75% {top:75%;} */
+    100% {top:100%;}
+}
+
+
+.sidePar{
+    position: fixed;
+    top: 30%;
+    right: 0;
+}
+
+/*==== About ====*/
+.about{
+    padding-block: 50px;
+}
+
+.about .about-img , .about .about-info{
+    width: 49%;
+    display: inline-block;
+}
+
+.about .about-info img{
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about .about-info p{
+    padding-block: 30px;
+    font-size: 17px;
+    line-height: 32px;
+    color: #686868;
+}
+
+.about .about-info h2{
+    font-size: 32px;
+    color: #303030;
+}
+
+.about .about-info ul li{
+    padding-top: 20px;
+    color: #686868;
+}
+
+.about .about-img{
+    vertical-align: top;
+}
+
+.about .about-img img{
+    width: 90%;
+}
+
+/*==== Offer ====*/
+
+.offer{
+    padding-block: 50px;
+    background-color: #f8f8f8;
+}
+
+.offer .offer-info , .offer .offer-img{
+    width: 47%;
+}
+
+.offer .offer-info{
+    float: left;
+}
+
+.offer .offer-img{
+    float: right;
+}
+
+.offer .offer-info p{
+    color: #686868;
+    line-height: 32px;
+    font-size: 17px;
+}
+
+.offer .offer-info p:nth-of-type(1){
+    padding-block: 30px;
+}
+
+/*==== Gallery ==== */
+.gallery{
+    padding-block: 50px;
+    text-align: center;
+}
+
+.gallery .title p{
+    padding-block: 30px;
+    letter-spacing: 1px;
+}
+.gallery p{
+    color: #686868;
+    line-height: 31.5px;
+}
+.gallery .title h3{
+    font-size: 30px;
+}
+
+.gallery h4{
+    font-weight: 700;
+}
+
+.gallery .item{
+    width: 33.33%;
+    float: left;
+}
+
+.gallery .item img{
+    width: 90%;
+}
+
+.gallery-info h4{
+    padding-block: 20px;
+}
+
+/*==== Blog ====*/
+.blog{
+    padding-block: 50px;
+    background-color: #f8f8f8;
+}
+
+.blog .blog-info , .blog-map{
+    width: 50%;
+    float: left;
+}
+
+.blog-info img{
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.blog-info p:nth-of-type(1){
+    padding-block: 30px;
+    line-height: 31px;
+}
+
+.blog-info p:nth-of-type(2){
+    padding-bottom: 30px;
+}
+
+.blog-info ul li{
+    padding-bottom: 20px;
+}
+
+.blog-info p ,.blog-info ul li{
+    color: #686868;
+}
+
+/*==== Contact ====*/
+.contact{
+    padding-block: 50px;
+    background-color: #403d38;
+}
+
+.contact .item{
+    width: 25%;
+    float: left;
+}
+
+.contact .item img{
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact .item h4{
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact .item p ,.contact .item a ,.contact .item ul li{
+    color: #969696;
+    line-height: 29.5px;
+    width: 250px;
+}
+
+.contact .item p:nth-of-type(1){
+    padding-bottom: 20px;
+}
+
+.contact .item ul li{
+    padding-block: 15px;
+    border-bottom: 1px solid #222;
+}
+
+/*==== Footer ====*/
+.footer{
+    padding-block: 50px;
+    background-color: #353330;
+    text-align: center;
+}
+.footer img{
+    width: 40px;
+    display: inline-block;
+}
+
+.footer .footer-logo{
+    width: 350px;
+}
+
+.footer p{
+    font-size: 15px;
+    padding-block: 20px;
+    color: #777777;
+}
+
+/*==== Media Query ====*/
+@media screen and (max-width:768px) {
+    .navbar label{
+        display: block;
+    }
+
+    .landing .nav-menu{
+        position: absolute;
+        top: 100%;
+        max-height: 0;
+        transition: 1s;
+        overflow: hidden;
+    }
+    
+    .navbar #bar:checked + .nav-menu{
+        max-height: 100vh;
+    }
+    
+    .landing .nav-menu li a{
+        color: #fff;
+        font-size: 18px;
+        display: block;
+        margin-block: 10px;
+        background-color: rgb(126, 88, 88);
+        padding:15px;
+    }
+
+    .landing .nav-menu li{
+        display: block;
+        padding-inline: 20px;
+    }
+
+    .landing .nav-menu{
+        text-align: center;
+        background-color: #00000034;
+        width: 100%;
+    }
+}
